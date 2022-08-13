@@ -437,7 +437,19 @@ header {
   }
 }
 
+.our_customers{
+  padding-top: 96px;
+  .container{
+    position: relative;
 
+  }
+
+  h2{
+    position: absolute;
+    top: 96px;
+    left: 0;
+  }
+}
 
 
 

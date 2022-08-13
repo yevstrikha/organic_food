@@ -311,4 +311,13 @@ header {
       width: 100%;
       opacity: 100%; }
 
+.our_customers {
+  padding-top: 96px; }
+  .our_customers .container {
+    position: relative; }
+  .our_customers h2 {
+    position: absolute;
+    top: 96px;
+    left: 0; }
+
 /*# sourceMappingURL=style.css.map */
