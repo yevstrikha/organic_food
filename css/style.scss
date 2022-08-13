@@ -44,7 +44,7 @@ body {
   background-color: #fff;
 }
 
-$green: #09A66D;
+$green: #25c088;
 
 a {
   font-family: $main_font;
@@ -250,6 +250,10 @@ header {
     padding: 23px 0;
     cursor: pointer;
     transition: 0.5s;
+    &:hover{
+      background-color: $green;
+
+    }
 
     &:after {
       font-family: "Font Awesome 6 Free";
@@ -369,7 +373,69 @@ header {
 }
 
 
+.special_item{
+  padding: 80px 0;
+  position: relative;
+  .img_absolute{
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    max-width: 400px;
+    img{
+      width: 100%;
+      display: block;
+    }
+  }
+.special_content{
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: space-around;
+  .special_text{
+    max-width: 600px;
+    h2{
+      margin-bottom: 20px;
+    }
+    p{
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      margin-bottom: 50px;
+    }
+    .do_it_now{
+      display: flex;
+      align-items: center;
+      p{
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+  position: relative;
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #09A66D;
+    opacity: 5%;
+  }
+  .special_img{
+    max-width: 600px;
+    margin-right: 50px;
+    img{
+      display: block;
+      width: 100%;
+      opacity: 100% ;
 
+    }
+  }
+}
 
 
 
