@@ -315,9 +315,92 @@ header {
   padding-top: 96px; }
   .our_customers .container {
     position: relative; }
-  .our_customers h2 {
+    .our_customers .container h2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 5; }
+  .our_customers .carousel_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: end; }
+    .our_customers .carousel_content .carousel_text {
+      max-width: 500px;
+      width: 100%;
+      padding-top: 30px; }
+      .our_customers .carousel_content .carousel_text p {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        color: #555555; }
+      .our_customers .carousel_content .carousel_text .customer_name {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 36px;
+        color: #222222;
+        margin-top: 40px;
+        margin-bottom: 20px; }
+      .our_customers .carousel_content .carousel_text img {
+        display: block;
+        max-width: 150px; }
+    .our_customers .carousel_content .carousel_img {
+      position: relative;
+      margin-top: 35px; }
+      .our_customers .carousel_content .carousel_img .score {
+        position: absolute;
+        left: -12px;
+        bottom: -11px;
+        max-width: 230px; }
+    .our_customers .carousel_content .img_back {
+      max-width: 500px;
+      width: 100%;
+      background-color: #F3FBF8;
+      padding-top: 55px;
+      padding-left: 25px;
+      padding-right: 25px;
+      border-radius: 50%;
+      overflow: hidden; }
+      .our_customers .carousel_content .img_back img {
+        display: block;
+        width: 100%; }
+  .our_customers .owl-nav {
     position: absolute;
-    top: 96px;
-    left: 0; }
+    bottom: 15px;
+    left: 28%; }
+  .our_customers .owl-nav button.owl-prev {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: solid 1px #cccccc;
+    margin-right: 25px;
+    text-align: center; }
+    .our_customers .owl-nav button.owl-prev span {
+      display: none; }
+    .our_customers .owl-nav button.owl-prev:before {
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      content: "\f053";
+      display: inline-block;
+      color: #cccccc; }
+  .our_customers .owl-nav button.owl-next {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #25c088;
+    margin-right: 25px;
+    text-align: center; }
+    .our_customers .owl-nav button.owl-next span {
+      display: none; }
+    .our_customers .owl-nav button.owl-next:before {
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      content: "\f053";
+      display: inline-block;
+      transform: rotate(180deg);
+      color: white; }
 
 /*# sourceMappingURL=style.css.map */

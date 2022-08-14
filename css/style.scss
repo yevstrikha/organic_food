@@ -441,15 +441,118 @@ header {
   padding-top: 96px;
   .container{
     position: relative;
+    h2{
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 5;
+    }
 
   }
+  .carousel_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    .carousel_text{
+      max-width: 500px;
+      width: 100%;
+      padding-top: 30px;
 
-  h2{
-    position: absolute;
-    top: 96px;
-    left: 0;
+      p{
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        color: #555555;
+      }
+      .customer_name{
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 36px;
+        color: #222222;
+        margin-top: 40px;
+        margin-bottom: 20px;
+      }
+      img{
+        display: block;
+        max-width: 150px;
+      }
+    }
+    .carousel_img{
+      position: relative;
+      margin-top: 35px;
+      .score{
+        position: absolute;
+        left: -12px;
+        bottom: -11px;
+        max-width: 230px;
+      }
+
+    }
+    .img_back{
+      max-width: 500px;
+      width: 100%;
+      background-color: #F3FBF8;
+      padding-top: 55px;
+      padding-left: 25px;
+      padding-right: 25px;
+      border-radius: 50%  ;
+      overflow: hidden;
+      img{
+        display: block;
+        width: 100%;
+      }
+    }
   }
+.owl-nav{
+  position: absolute;
+  bottom:15px;
+  left: 28%;
 }
+    .owl-nav button.owl-prev{
+      width: 56px;
+      height: 56px;
+      border-radius: 50%  ;
+      border: solid 1px #cccccc;
+      margin-right: 25px;
+      text-align: center;
+      span{
+        display: none;
+      }
+      &:before{
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        content: "\f053";
+        display: inline-block;
+        color: #cccccc;
+      }
+    }
+  .owl-nav button.owl-next{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%  ;
+    background-color: $green;
+    margin-right: 25px;
+    text-align: center;
+    span{
+      display: none;
+    }
+    &:before{
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      content: "\f053";
+      display: inline-block;
+      transform: rotate(180deg);
+      color: white;
+    }
+  }
+
+  }
+
+
 
 
 
