@@ -83,7 +83,7 @@ header {
       header .header_content .regist .btn {
         display: block;
         padding: 10px 23px;
-        background-color: #25c088;
+        background-color: #3fe7aa;
         border-radius: 8px;
         color: white;
         width: 100%;
@@ -169,7 +169,7 @@ header {
   z-index: 3;
   margin-left: 20px;
   display: inline-block;
-  background-color: #25c088;
+  background-color: #3fe7aa;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -178,7 +178,7 @@ header {
   cursor: pointer;
   transition: 0.5s; }
   .do_it_now a:hover {
-    background-color: #25c088; }
+    background-color: #3fe7aa; }
   .do_it_now a:after {
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
@@ -210,7 +210,7 @@ header {
     justify-content: space-between;
     text-align: center; }
     .the_best .best_content .fa-arrow-down-long {
-      color: #25c088;
+      color: #3fe7aa;
       margin-top: 60px;
       font-size: 30px; }
     .the_best .best_content .best_icon {
@@ -323,7 +323,8 @@ header {
   .our_customers .carousel_content {
     display: flex;
     justify-content: space-between;
-    align-items: end; }
+    align-items: end;
+    flex-wrap: wrap; }
     .our_customers .carousel_content .carousel_text {
       max-width: 500px;
       width: 100%;
@@ -370,7 +371,11 @@ header {
   .our_customers .owl-nav {
     position: absolute;
     bottom: 15px;
-    left: 28%; }
+    left: 28%;
+    transition: 0.5s; }
+    .our_customers .owl-nav button:hover {
+      border: none;
+      background-color: #3fe7aa; }
   .our_customers .owl-nav button.owl-prev {
     width: 56px;
     height: 56px;
@@ -390,7 +395,7 @@ header {
     width: 56px;
     height: 56px;
     border-radius: 50%;
-    background-color: #25c088;
+    border: solid 1px #cccccc;
     margin-right: 25px;
     text-align: center; }
     .our_customers .owl-nav button.owl-next span {
@@ -401,6 +406,51 @@ header {
       content: "\f053";
       display: inline-block;
       transform: rotate(180deg);
-      color: white; }
+      color: #cccccc; }
+
+.order {
+  padding-top: 165px; }
+  .order .order_content {
+    display: flex;
+    justify-content: space-between; }
+    .order .order_content .order_img {
+      position: relative; }
+      .order .order_content .order_img .second_phone {
+        position: absolute;
+        top: -27px;
+        left: 27px; }
+    .order .order_content .order_text {
+      max-width: 660px;
+      width: 100%; }
+      .order .order_content .order_text a {
+        text-decoration: none;
+        padding: 11px 22px;
+        text-align: center;
+        background-color: #F3FBF8;
+        border-radius: 50px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 18px;
+        color: #333333;
+        display: inline-block;
+        margin-bottom: 16px;
+        transition: 0.5s; }
+        .order .order_content .order_text a:hover {
+          background-color: #96f3d0; }
+      .order .order_content .order_text h2 {
+        margin-bottom: 20px; }
+      .order .order_content .order_text p {
+        margin-bottom: 50px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        color: #555555; }
+      .order .order_content .order_text .order_btn {
+        display: flex;
+        justify-content: space-between; }
 
 /*# sourceMappingURL=style.css.map */
