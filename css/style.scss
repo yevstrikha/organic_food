@@ -252,7 +252,7 @@ header {
     transition: 0.5s;
 
     &:hover {
-      background-color: $green;
+      background-color: #0e855d;
 
     }
 
@@ -596,10 +596,12 @@ header {
 
 
 .order {
-  padding-top: 165px;
+  padding: 145px 0;
+
   .order_content {
     display: flex;
     justify-content: space-between;
+
     .order_img {
       position: relative;
 
@@ -609,15 +611,17 @@ header {
         left: 27px;
       }
     }
-    .order_text{
+
+    .order_text {
       max-width: 660px;
       width: 100%;
-      a{
+
+      a {
         text-decoration: none;
         padding: 11px 22px;
         text-align: center;
-        background-color:#F3FBF8;
-        border-radius: 50px  ;
+        background-color: #F3FBF8;
+        border-radius: 50px;
         font-family: 'DM Sans';
         font-style: normal;
         font-weight: 400;
@@ -627,14 +631,17 @@ header {
         display: inline-block;
         margin-bottom: 16px;
         transition: 0.5s;
-        &:hover{
+
+        &:hover {
           background-color: #96f3d0;
         }
       }
-      h2{
+
+      h2 {
         margin-bottom: 20px;
       }
-      p{
+
+      p {
         margin-bottom: 50px;
         font-family: 'DM Sans';
         font-style: normal;
@@ -643,9 +650,150 @@ header {
         line-height: 30px;
         color: #555555;
       }
-      .order_btn{
+
+      .order_btn {
         display: flex;
-        justify-content: space-between;
+
+
+        a {
+          background: none;
+          padding: 0;
+
+          &:first-of-type {
+            margin-right: 25px;
+          }
+          &:hover{
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  padding-top: 67px;
+  padding-bottom: 120px;
+  background-color: #FCFEFD;
+
+  .footer_content {
+    display: flex;
+    justify-content: space-between;
+
+    .logo_text {
+      max-width: 345px;
+      width: 100%;
+
+      p {
+        margin-top: 30px;
+      }
+    }
+
+    .footer_info {
+      padding-top: 40px;
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 31px;
+        color: #222222;
+        margin-bottom: 40px;
+      }
+
+      ul {
+        li {
+          margin-bottom: 25px;
+
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      a {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+        color: #555555;
+
+        &:hover {
+          color: #0e855d;
+          text-decoration: underline;
+        }
+      }
+
+      .resources {
+        margin: 0 140px;
+      }
+
+      .contact {
+        p:last-of-type, a {
+          font-family: 'DM Sans';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 23px;
+          color: #222222;
+        }
+
+        .footer_social {
+          display: flex;
+          justify-content: space-between;
+          padding-right: 40px;
+
+          a {
+            transition: 0.2s;
+          }
+
+          a:hover {
+            text-decoration: none;
+            transform: scale(1.2);
+          }
+
+          a:first-of-type {
+            &:before {
+              font-family: "Font Awesome 6 Brands";
+              font-weight: 400;
+              content: "\f39e";
+            }
+
+            &:hover {
+              color: blue;
+            }
+          }
+
+          a:nth-of-type(2) {
+            &:before {
+              font-family: "Font Awesome 6 Brands";
+              font-weight: 400;
+              content: "\f099";
+            }
+
+            &:hover {
+              color: blue;
+            }
+          }
+
+
+          a:last-of-type {
+            &:before {
+              font-family: "Font Awesome 6 Brands";
+              font-weight: 400;
+              content: "\f16d";
+            }
+
+            &:hover {
+              color: deeppink;
+            }
+          }
+        }
+
       }
     }
   }

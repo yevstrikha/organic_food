@@ -178,7 +178,7 @@ header {
   cursor: pointer;
   transition: 0.5s; }
   .do_it_now a:hover {
-    background-color: #3fe7aa; }
+    background-color: #0e855d; }
   .do_it_now a:after {
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
@@ -409,7 +409,7 @@ header {
       color: #cccccc; }
 
 .order {
-  padding-top: 165px; }
+  padding: 145px 0; }
   .order .order_content {
     display: flex;
     justify-content: space-between; }
@@ -450,7 +450,88 @@ header {
         line-height: 30px;
         color: #555555; }
       .order .order_content .order_text .order_btn {
+        display: flex; }
+        .order .order_content .order_text .order_btn a {
+          background: none;
+          padding: 0; }
+          .order .order_content .order_text .order_btn a:first-of-type {
+            margin-right: 25px; }
+          .order .order_content .order_text .order_btn a:hover {
+            transform: scale(1.1); }
+
+footer {
+  padding-top: 67px;
+  padding-bottom: 120px;
+  background-color: #FCFEFD; }
+  footer .footer_content {
+    display: flex;
+    justify-content: space-between; }
+    footer .footer_content .logo_text {
+      max-width: 345px;
+      width: 100%; }
+      footer .footer_content .logo_text p {
+        margin-top: 30px; }
+    footer .footer_content .footer_info {
+      padding-top: 40px;
+      display: flex;
+      justify-content: space-between; }
+      footer .footer_content .footer_info p {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 31px;
+        color: #222222;
+        margin-bottom: 40px; }
+      footer .footer_content .footer_info ul li {
+        margin-bottom: 25px; }
+        footer .footer_content .footer_info ul li:last-of-type {
+          margin-bottom: 0; }
+      footer .footer_content .footer_info a {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+        color: #555555; }
+        footer .footer_content .footer_info a:hover {
+          color: #0e855d;
+          text-decoration: underline; }
+      footer .footer_content .footer_info .resources {
+        margin: 0 140px; }
+      footer .footer_content .footer_info .contact p:last-of-type, footer .footer_content .footer_info .contact a {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+        color: #222222; }
+      footer .footer_content .footer_info .contact .footer_social {
         display: flex;
-        justify-content: space-between; }
+        justify-content: space-between;
+        padding-right: 40px; }
+        footer .footer_content .footer_info .contact .footer_social a {
+          transition: 0.2s; }
+        footer .footer_content .footer_info .contact .footer_social a:hover {
+          text-decoration: none;
+          transform: scale(1.2); }
+        footer .footer_content .footer_info .contact .footer_social a:first-of-type:before {
+          font-family: "Font Awesome 6 Brands";
+          font-weight: 400;
+          content: "\f39e"; }
+        footer .footer_content .footer_info .contact .footer_social a:first-of-type:hover {
+          color: blue; }
+        footer .footer_content .footer_info .contact .footer_social a:nth-of-type(2):before {
+          font-family: "Font Awesome 6 Brands";
+          font-weight: 400;
+          content: "\f099"; }
+        footer .footer_content .footer_info .contact .footer_social a:nth-of-type(2):hover {
+          color: blue; }
+        footer .footer_content .footer_info .contact .footer_social a:last-of-type:before {
+          font-family: "Font Awesome 6 Brands";
+          font-weight: 400;
+          content: "\f16d"; }
+        footer .footer_content .footer_info .contact .footer_social a:last-of-type:hover {
+          color: deeppink; }
 
 /*# sourceMappingURL=style.css.map */
