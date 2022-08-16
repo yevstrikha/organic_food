@@ -133,7 +133,8 @@ header {
       display: inline; }
   .main .main_content {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: end; }
     .main .main_content .main_img {
       max-width: 800px;
       position: relative;
@@ -328,7 +329,8 @@ header {
     .our_customers .carousel_content .carousel_text {
       max-width: 500px;
       width: 100%;
-      padding-top: 30px; }
+      padding-top: 30px;
+      margin-top: 185px; }
       .our_customers .carousel_content .carousel_text p {
         font-family: 'DM Sans';
         font-style: normal;
@@ -533,5 +535,8 @@ footer {
           content: "\f16d"; }
         footer .footer_content .footer_info .contact .footer_social a:last-of-type:hover {
           color: deeppink; }
+
+.open-main-nav {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

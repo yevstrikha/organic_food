@@ -187,6 +187,7 @@ header {
   .main_content {
     display: flex;
     justify-content: space-between;
+    align-items: end;
 
     .main_img {
       max-width: 800px;
@@ -480,6 +481,7 @@ header {
       max-width: 500px;
       width: 100%;
       padding-top: 30px;
+      margin-top: 185px;
 
       p {
         font-family: 'DM Sans';
@@ -799,4 +801,7 @@ footer {
   }
 }
 
+.open-main-nav{
+  display: none;
+}
 
