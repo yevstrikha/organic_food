@@ -52,6 +52,11 @@
   }
   .main {
     padding-top: 50px;
+    .container{
+      .left_top_img{
+        top: -45px;
+      }
+    }
   }
   .the_best {
     padding-top: 60px;
@@ -182,11 +187,12 @@
   }
   .burger {
     position: fixed;
+    right: 15px;
     display: block;
     width: 28px;
     height: 4px;
     margin: 0 auto;
-    background: #5A3B5D;
+    background: #3fe7aa;
     transform: skew(5deg);
     transition: all .275s;
   }
@@ -196,7 +202,7 @@
     content: '';
     display: block;
     height: 100%;
-    background: #5A3B5D;
+    background: #3fe7aa;
     transition: all .275s;
   }
 
@@ -211,10 +217,13 @@
   /* Toggle State part */
   .is-open .burger {
     transform: skew(5deg) translateY(-8px) rotate(-45deg);
+    background: black;
+
   }
 
   .is-open .burger:before {
     transform: translateY(0px) skew(-10deg) rotate(75deg);
+    background: black;
   }
 
   .is-open .burger:after {
@@ -225,10 +234,12 @@
   /* MENU Text part */
 
   .burger-text {
+    position: fixed;
+    right: 15px;
     display: block;
     font-size: .675rem;
     letter-spacing: .05em;
-    margin-top: .5em;
+    margin-top: 1em;
     text-transform: uppercase;
     font-weight: 500;
     text-align: center;
