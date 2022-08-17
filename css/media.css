@@ -179,7 +179,6 @@
     transform: translateY(-12px) translateX(10px) skew(-20deg);
     opacity: 0; }
 
-  /* MENU Text part */
   .burger-text {
     position: fixed;
     right: 15px;
