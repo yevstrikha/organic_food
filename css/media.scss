@@ -2,6 +2,13 @@
   .container {
     padding: 0 30px;
   }
+  .our_customers {
+    .container {
+      h2 {
+        left: 25px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -146,6 +153,7 @@
   .main {
     h1 {
       z-index: 0;
+      font-size: 60px;
     }
   }
   .do_it_now {
@@ -169,7 +177,7 @@
 
   .open-main-nav {
     position: absolute;
-    top: 25px;
+    top: 32px;
     padding-top: 20px;
     right: 15px;
     z-index: 1000;
@@ -210,24 +218,20 @@
     transform: translateY(-16px) skew(-10deg);
   }
 
-  /* Toggle State part */
   .is-open .burger {
     transform: skew(5deg) translateY(-8px) rotate(-45deg);
     background: black;
-
   }
 
   .is-open .burger:before {
     transform: translateY(0px) skew(-10deg) rotate(75deg);
     background: black;
-
   }
 
   .is-open .burger:after {
     transform: translateY(-12px) translateX(10px) skew(-20deg);
     opacity: 0;
   }
-
 
 
   .burger-text {
@@ -269,9 +273,10 @@
     display: block;
   }
   .our_customers {
-    .owl-nav{
+    .owl-nav {
       left: 75%;
     }
+
     .container {
       .carousel_content {
         .carousel_text {
@@ -291,28 +296,34 @@
       }
     }
   }
-  .order{
+  .order {
     padding-bottom: 70px;
-    .order_content{
+
+    .order_content {
       align-items: center;
-      .order_img{
+
+      .order_img {
         margin-right: 25px;
-        .second_phone{
+
+        .second_phone {
           display: none;
         }
       }
     }
   }
-  footer{
+  footer {
     padding: 50px 0;
-    .footer_content{
-      .logo_text{
+
+    .footer_content {
+      .logo_text {
         margin-right: 25px;
       }
-      .footer_info{
+
+      .footer_info {
         max-width: 600px;
         width: 100%;
-        .resources{
+
+        .resources {
           margin: 0 50px;
         }
       }
@@ -322,11 +333,135 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .main {
+    background: url(../images/vegetables-fruits.png) no-repeat center bottom #F3FBF8;
+    background-size: contain;
+
+    h1 {
+      font-size: 50px;
+      line-height: 60px;
+    }
+
+    .main_img {
+      display: none;
+    }
+
+    .main_rating {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .rating_item {
+        margin: 30px;
+        width: 80%;
+        justify-content: space-between;
+
+        .rating_text {
+          display: flex;
+
+          h3 {
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+  }
+  h2{
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .the_best{
+    p{
+      max-width: 100%;
+    }
+  }
+  .the_best .best_reason .best_item{
+    flex-wrap: wrap;
+    justify-content: center;
+    .best_img{
+      margin: auto;
+      border-radius: 30%;
+    }
+  }
+  .special_item .special_img{
+    display: none;
+  }
+  .our_customers .owl-nav{
+    display: none;
+  }
+
+  .owl-carousel button.owl-dot{
+    position: relative;
+    bottom: 0;
+    left: 50%;
+      height: 7px;
+      width: 7px;
+      background-color: #0e855d;
+    margin-right: 7px;
+    border-radius: 50%;
+&.active{
+  border: solid 2px #0e855d;
+  background: none;
+  height: 10px;
+  width: 10px;
+}
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .our_customers .container .carousel_content .carousel_img{
+    display: none;
+  }
+  .main {
+    background-position: center 60%;
+  }
+  .the_best .best_content{
+    display: block;
+    .best_item{
+      padding: 20px;
+    }
+    .best_text{
+      h4{
+        margin-top: 15px;
+      }
+    }
+    .best_icon img{
+      display: none;
+    }
+  }
+  .special_item .special_content .special_text .do_it_now{
+    justify-content: center;
+  }
+  .order {
+    .order_content {
+      .order_text{
+        .order_btn{
+          justify-content: center;
+        }
+      }
+      .order_img{
+        display: none;
+      }
+    }
+  }
 
 }
 
 @media only screen and (max-width: 420px) {
-
+  .main {
+    h1 {
+      font-size: 35px;
+    }
+  }
+  .main .main_rating .rating_item .rating_text{
+    display: block;
+  }
+  h2{
+    font-size: 38px;
+  }
+  .order{
+    padding-bottom: 30px;
+  }
 }
 
 @media only screen and (max-width: 375px) {

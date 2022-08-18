@@ -106,6 +106,9 @@ header {
       left: -6%;
       max-width: 450px;
       margin-right: 600px; }
+      @media only screen and (max-width: 992px) {
+        .main .container .left_top_img {
+          top: -60px; } }
       .main .container .left_top_img img {
         display: block;
         width: 100%; }
@@ -202,10 +205,17 @@ header {
     z-index: 2; }
   .the_best h2 {
     margin-bottom: 20px; }
+    @media only screen and (max-width: 992px) {
+      .the_best h2 {
+        text-align: center; } }
   .the_best p {
     max-width: 42%;
     width: 100%;
     color: #555555; }
+    @media only screen and (max-width: 992px) {
+      .the_best p {
+        max-width: 80%;
+        margin: auto; } }
   .the_best .best_content {
     display: flex;
     justify-content: space-between;
@@ -236,8 +246,7 @@ header {
       .the_best .best_reason .best_item:nth-of-type(2) img {
         transform: scale(0.75); }
       .the_best .best_reason .best_item .best_img {
-        max-width: 80px;
-        width: 100%;
+        width: 80px;
         height: 100%;
         max-height: 80px;
         background-color: #F3FBF8;
