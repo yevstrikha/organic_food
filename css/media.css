@@ -292,7 +292,7 @@
 
   .owl-carousel button.owl-dot {
     position: relative;
-    bottom: 0;
+    bottom: -15px;
     left: 50%;
     height: 7px;
     width: 7px;
@@ -350,7 +350,10 @@
     footer .footer_content .footer_info {
       justify-content: space-around; }
       footer .footer_content .footer_info .navigation {
-        display: none; } }
+        display: none; }
+
+  .our_customers .container h2 {
+    left: 0; } }
 @media only screen and (max-width: 500px) {
   footer .footer_content {
     justify-content: space-around; }

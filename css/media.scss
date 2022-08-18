@@ -395,7 +395,7 @@
 
   .owl-carousel button.owl-dot {
     position: relative;
-    bottom: 0;
+    bottom: -15px;
     left: 50%;
     height: 7px;
     width: 7px;
@@ -493,7 +493,9 @@
     }
 
   }
-
+  .our_customers .container h2{
+    left: 0;
+  }
 }
 @media only screen and (max-width: 500px) {
   footer {
