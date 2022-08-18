@@ -9,6 +9,9 @@
       }
     }
   }
+  footer .footer_content .logo_text{
+    margin-right: 20px;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -16,6 +19,7 @@
 }
 
 @media only screen and (max-width: 992px) {
+
   h2 {
     font-size: 50px;
   }
@@ -72,7 +76,6 @@
       }
     }
   }
-  /* Main menu positionning */
   .main-nav {
     position: absolute;
     top: 0;
@@ -95,12 +98,9 @@
     visibility: visible;
   }
 
-  /* Yellow band effect */
+
   .main-nav::before {
     content: '';
-    //position: relative;
-    //top: 0;
-    //left: 0;
     height: 100vh;
     width: 100%;
     background: #3fe7aa;
@@ -317,11 +317,13 @@
     .footer_content {
       .logo_text {
         margin-right: 25px;
+        text-align: center;
       }
 
       .footer_info {
         max-width: 600px;
         width: 100%;
+        padding-top: 0;
 
         .resources {
           margin: 0 50px;
@@ -366,101 +368,173 @@
       }
     }
   }
-  h2{
+  h2 {
     font-size: 50px;
     line-height: 60px;
   }
-  .the_best{
-    p{
+  .the_best {
+    p {
       max-width: 100%;
     }
   }
-  .the_best .best_reason .best_item{
+  .the_best .best_reason .best_item {
     flex-wrap: wrap;
     justify-content: center;
-    .best_img{
+
+    .best_img {
       margin: auto;
       border-radius: 30%;
     }
   }
-  .special_item .special_img{
+  .special_item .special_img {
     display: none;
   }
-  .our_customers .owl-nav{
+  .our_customers .owl-nav {
     display: none;
   }
 
-  .owl-carousel button.owl-dot{
+  .owl-carousel button.owl-dot {
     position: relative;
     bottom: 0;
     left: 50%;
-      height: 7px;
-      width: 7px;
-      background-color: #0e855d;
+    height: 7px;
+    width: 7px;
+    background-color: #0e855d;
     margin-right: 7px;
     border-radius: 50%;
-&.active{
-  border: solid 2px #0e855d;
-  background: none;
-  height: 10px;
-  width: 10px;
-}
+
+    &.active {
+      border: solid 2px #0e855d;
+      background: none;
+      height: 10px;
+      width: 10px;
+    }
+  }
+  footer {
+    .footer_content {
+      display: block;
+
+      .logo_text {
+        display: flex;
+        margin-right: 0;
+        align-items: start;
+        max-width: 700px;
+
+        p {
+          margin-top: 0;
+          margin-left: 50px;
+        }
+      }
+
+      .footer_info {
+        margin: auto;
+        padding-top: 40px;
+      }
+    }
+
   }
 }
 
 @media only screen and (max-width: 650px) {
-  .our_customers .container .carousel_content .carousel_img{
+  .our_customers .container .carousel_content .carousel_img {
     display: none;
+  }
+  footer .footer_content .footer_info .resources {
+    margin: 0 20px;
   }
   .main {
     background-position: center 60%;
   }
-  .the_best .best_content{
+  .the_best .best_content {
     display: block;
-    .best_item{
+
+    .best_item {
       padding: 20px;
     }
-    .best_text{
-      h4{
+
+    .best_text {
+      h4 {
         margin-top: 15px;
       }
     }
-    .best_icon img{
+
+    .best_icon img {
       display: none;
     }
   }
-  .special_item .special_content .special_text .do_it_now{
+  .special_item .special_content .special_text .do_it_now {
     justify-content: center;
   }
   .order {
     .order_content {
-      .order_text{
-        .order_btn{
+      .order_text {
+        .order_btn {
           justify-content: center;
         }
       }
-      .order_img{
+
+      .order_img {
         display: none;
       }
     }
   }
+  footer {
+    .footer_content {
+      justify-content: space-around;
+
+      .footer_info {
+        justify-content: space-around;
+
+        .navigation {
+          display: none;
+        }
+
+      }
+    }
+
+  }
 
 }
+@media only screen and (max-width: 500px) {
+  footer {
+    .footer_content {
+      justify-content: space-around;
 
+      .footer_info {
+        justify-content: space-around;
+        .contact {
+          display: none;
+        }
+      }
+    }
+
+  }
+  footer .footer_content .logo_text{
+    display: block;
+    text-align: center;
+    p{
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+}
 @media only screen and (max-width: 420px) {
   .main {
     h1 {
       font-size: 35px;
     }
   }
-  .main .main_rating .rating_item .rating_text{
+  .main .main_rating .rating_item .rating_text {
     display: block;
   }
-  h2{
+  h2 {
     font-size: 38px;
   }
-  .order{
+  .order {
     padding-bottom: 30px;
+  }
+  footer .footer_content .logo_text {
+    align-items: center;
   }
 }
 
